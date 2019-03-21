@@ -6,3 +6,17 @@ https://www.kaggle.com/roydatascience/eda-pca-simple-lgbm-on-kfold-technique
 
 ３、good eda
 https://www.kaggle.com/gpreda/santander-eda-and-prediction
+
+
+参数分段训练，数据集分段训练
+train_df = pd.read_csv('../input/train.csv', nrows=20000)
+test_df = pd.read_csv('../input/test.csv', nrows=20000)
+
+features = train_df.columns.values[2:100]
+train_func("test100", features)
+features = train_df.columns.values[100:200]
+train_func("test200",features)
+features = train_df.columns.values[2::2]
+train_func("test_step_2",features)
+features = train_df.columns.values[2:12]
+train_func("test12",features)
