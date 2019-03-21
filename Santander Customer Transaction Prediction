@@ -7,6 +7,8 @@ https://www.kaggle.com/roydatascience/eda-pca-simple-lgbm-on-kfold-technique
 ３、good eda
 https://www.kaggle.com/gpreda/santander-eda-and-prediction
 
+LightGBM教程
+https://jepsonwong.github.io/2018/06/08/LightGBM/
 
 参数分段训练，数据集分段训练
 train_df = pd.read_csv('../input/train.csv', nrows=20000)
